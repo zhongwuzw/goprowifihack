@@ -1,11 +1,11 @@
 byte | value
 -----|--------
 1    | ?
-2 | Current mode. 0-4 matches set CM. 7 - in menu. 
+2 | Current mode. 0-4 matches set CM（视频、照片等等）. 7 - in menu(当处在设置界面时返回7). 
 3 | ?
-4 | Start up mode : 0 = video - 1 = photo - 2 = burst - 3 = timelapse 
+4 | Start up mode : 0 = video - 1 = photo - 2 = burst - 3 = timelapse （开机默认设置的模式）
 5 | Spot meter : 0 = Off - 1 = On 
-6 | Current timelapse interval 
+6 | Current timelapse interval （就是输入timelapse命令的代号）
 7 | Automatic power off : 0 = never - 1 = 60sec - 2 = 120sec - 3 = 300sec 
 8 | Current view angle 
 9 | Current photo mode 
