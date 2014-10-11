@@ -41,45 +41,6 @@ Stop capture : http://<ip>/bacpac/SH?t=<password>&p=%00
 
 * camera UP - 01 Orientation DOWN
 
-###Video resolutions HERO2 and HERO3 silver:
-
-* camera VR - 00 WVGA 60
-
-* camera VR - 01 WVGA 120
-
-* camera VR - 02 720 30
-
-* camera VR - 03 720 60
-
-* camera VR - 04 960 30
-
-* camera VR - 05 960 48
-
-* camera VR - 06 1080 30
-
-###Video resolutions Black edition:
-
-* camera VV 08 4kCin12
-
-* camera VV 07 2.7kCin24
-
-* camera VV 06 4k 15
-
-* camera VV 05 2.7k 30
-
-* camera VV 04 1440p 40
-
-* camera VV 03 1080 60
-
-* camera VR 05 1080 30
-
-* camera VR 06 960 48
-
-* camera VV 02 960 100
-
-* camera VV 01 720 120
-
-* camera VV 00 WVGA 240
 
 ###Video resolutions HERO3+Black:
 
@@ -151,15 +112,6 @@ Stop capture : http://<ip>/bacpac/SH?t=<password>&p=%00
 
 * camera FV - 02 narrow   http://10.5.5.9/camera/FV?t=blm123123&p=%02
 
-###Photo resolution HERO2 and HERO3 silver:
-
-* camera PR - 00 11mpW
-
-* camera PR - 01 8mpM
-
-* camera PR - 02 5mpW
-
-* camera PR - 03 5mpM
 
 ###Timelapse Interval:
 
@@ -246,17 +198,6 @@ EXPOSURE
 
 * camera BU - 06 30/3s  http://10.5.5.9/camera/BU?t=blm123123&p=%06
 
-###Loop Video HERO3:
-
-* camera LO - 00 OFF
-
-* camera LO - 01 5min
-
-* camera LO - 02 20Min
-
-* camera LO - 03 60Min
-
-* camera LO - 05 Max
 
 ###Protune ON/OFF:
 
@@ -300,43 +241,6 @@ EXPOSURE
 
 * camera OB - 01 ON
 
-###Protune Resolutions HERO2 and HERO3 silver:
-
-* camera VR - 07 1080 30 Protune
-
-* camera VR - 08 1080 24 Protune
-
-* camera VR - 11 1080 25 Protune
-
-* camera VR - 09 960 60 Protune
-
-###Protune Resolutions HERO3 black ONLY IF PROTUNE IS ON:
-
-* camera VV 00 720 120T
-
-* camera VV 02 960 100T
-
-* camera VV 03 1080 60T
-
-* camera VV 04 1440 48T
-
-* camera VV 05 2.7k 30T
-
-* camera VV 06 4k 15T
-
-* camera VV 07 2.7KCin24T
-
-* camera VV 08 4kCin12T
-
-###Auto Power Off:
-
-* camera AO - 00 NEVER
-
-* camera AO - 01 60s
-
-* camera AO - 02 120s
-
-* camera AO - 03 300s
 
 ###Default Mode:
 
@@ -348,20 +252,6 @@ EXPOSURE
 
 * camera CM - 03 Timelapse  http://10.5.5.9/camera/CM?t=blm123123&p=%03
 
-###OnScreen Display:
 
-* camera OS - 00 OFF
 
-* camera OS - 01 ON
 
-###Locate:
-
-* camera LL - 01 Start
-
-* camera LL - 00 Stop
-
-###Video Mode:
-
-* camera VM - 00 NTSC
-
-* camera VM - 01 PAL
