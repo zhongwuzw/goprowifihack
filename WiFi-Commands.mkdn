@@ -1,3 +1,8 @@
+获取数据列表：
+10.5.5.9:8080/gp/gpMediaList
+
+如果视频能预览，则可以使用10.5.5.9:8080/gp/gpMediaMetadata?p=100GOPRO/G0290362.MP4&t=dur来获取视频的长度，再通过10.5.5.9：8080/gp/gpMediaMetadata?p=100GOPRO/G0240351.MP4来获取能预览的视频的初始图片
+
 ###Basics:
 
 * bacpac PW - 00 Turn GoPro OFF
@@ -11,6 +16,10 @@
 * camera PV - 02 Preview ON
 
 * camera PV - 00 Preview OFF
+* 
+Start capture : http://<ip>/bacpac/SH?t=<password>&p=%01
+
+Stop capture : http://<ip>/bacpac/SH?t=<password>&p=%00
 
 ###Mode:
 
@@ -28,7 +37,7 @@
 
 ###Orientation
 
-* camera UP - 00 Orientation UP
+* camera UP - 00 Orientation UP(方向的上下倒置）
 
 * camera UP - 01 Orientation DOWN
 
@@ -75,34 +84,38 @@
 ###Video resolutions HERO3+Black:
 
 * camera VV 06 - 4K http://10.5.5.9/camera/VV?t=blm123123&p=%06  这种情况下就是15FPS
-
 * camera VV 08 - 4K 17:9 http://10.5.5.9/camera/VV?t=blm123123&p=%08   这种情况下是12FPS
 
-* camera FS 01 - 4K 15FPS 
+* camera VV 07 - 2.7k http://10.5.5.9/camera/VV?t=blm123123&p=%07  （2.7k 17：9 24FPS）
+* 
+* camera VV 05 - 2.7k http://10.5.5.9/camera/VV?t=blm123123&p=%05 （2.7k 30FPS）
 
-* camera FS 00 - 4K 12FPS 
+* camera VV 04 - 1440p  http://10.5.5.9/camera/VV?t=blm123123&p=%04 (48FPS）
+* camera FS 04 - 1440p  http://10.5.5.9/camera/FS?t=blm123123&p=%04 (30FPS）
+* camera FS 02 - 1440p  http://10.5.5.9/camera/FS?t=blm123123&p=%02（24FPS）
 
-* camera VV 07 - 2K http://10.5.5.9/camera/VV?t=blm123123&p=%07  （2.7k 17：9 24FPS）
+* camera VV 09 - 1080 SuperView   http://10.5.5.9/camera/VV?t=blm123123&p=%09 (30FPS)
+* camera FS 07 - 1080 SuperView   http://10.5.5.9/camera/FS?t=blm123123&p=%07 (60FPS)
+* (48FPS)
+* (24FPS)
 
-* camera VV 05 - 2.7k http://10.5.5.9/camera/VV?t=blm123123&p=%05 （2。7k 30FPS）
+* camera VV 03 - 1080  http://10.5.5.9/camera/VV?t=blm123123&p=%03 (30FPS)
+* (60FPS)
+* camera FS 05 - 1080  http://10.5.5.9/camera/FS?t=blm123123&p=%05 (48FPS)
+* camera FS 04 - 1080  http://10.5.5.9/camera/FS?t=blm123123&p=%04 (30FPS)
+* camera FS 02 - 1080  http://10.5.5.9/camera/FS?t=blm123123&p=%02 (24FPS)
 
-* camera FS 02 - 2.7k 24FPS 
+* camera VV 02 -  960p   http://10.5.5.9/camera/VV?t=blm123123&p=%02(60FPS)
+* (100FPS)
 
-* camera FS 04 - 2.7k 30FPS 
+* camera VV 0a - 720 SuperView   http://10.5.5.9/camera/VV?t=blm123123&p=%0a(100FPS)
+* (60FPS)
 
-* camera VV 04 - 1440p  http://10.5.5.9/camera/VV?t=blm123123&p=%04 (30FPS）
+* camera VV 01 - 720p   http://10.5.5.9/camera/VV?t=blm123123&p=%01(120FPS)
+* (60FPS)
+* 
 
-* camera FS 05 - 1440 48FPS http://10.5.5.9/camera/FS?t=blm123123&p=%05（48FPS）
 
-* camera VV 09 - 1080 SuperView   http://10.5.5.9/camera/VV?t=blm123123&p=%09 广角
-
-* camera VV 03 - 1080  http://10.5.5.9/camera/VV?t=blm123123&p=%03
-
-* camera VV 02 -  960p   http://10.5.5.9/camera/VV?t=blm123123&p=%02
-
-* camera VV 0a - 720 SuperView   http://10.5.5.9/camera/VV?t=blm123123&p=%0a
-
-* camera VV 01 - 720p   http://10.5.5.9/camera/VV?t=blm123123&p=%01
 
 ###Frame rate:
 
@@ -130,7 +143,7 @@
 
 * camera FS - 0a FPS240
 
-###Fov:
+###Fov:Field of View(只有1080和720的分辨率才有下列选项，其他分辨率为wide)
 
 * camera FV - 00 wide  http://10.5.5.9/camera/FV?t=blm123123&p=%00
 
@@ -150,7 +163,7 @@
 
 ###Timelapse Interval:
 
-* camera TI - 00 0,5 sec  http://10.5.5.9/camera/TI?t=blm123123&p=%00
+* camera TI - 00 0.5 sec  http://10.5.5.9/camera/TI?t=blm123123&p=%00
 
 * camera TI - 01 1sec  http://10.5.5.9/camera/TI?t=blm123123&p=%01
 
@@ -171,7 +184,7 @@
 * camera BS - 02 100%  http://10.5.5.9/camera/BS?t=blm123123&p=%02
 
 ###White Balance HERO3 "ONLY IF Protune ON" (Protune打开才能进行白平衡设置）
-
+White Balance
 * camera WB - 00 auto  http://10.5.5.9/camera/WB?t=blm123123&p=%00
 
 * camera WB - 01 3000k   http://10.5.5.9/camera/WB?t=blm123123&p=%01
@@ -181,6 +194,33 @@
 * camera WB - 03 6500k  http://10.5.5.9/camera/WB?t=blm123123&p=%03
 
 * camera WB - 04 CAMRAW  http://10.5.5.9/camera/WB?t=blm123123&p=%04
+* 
+Color
+GopRO Color C0 00%
+FLAT C0 %01
+
+ISO Limit
+6400  GA 00%
+1600  GA 01%
+400   GA 02%
+
+Sharpness
+HIGH  SP 00%
+MEDIUM SP  01%
+LOW SP 02%
+
+EXPOSURE
+-2.0  EV 06%
+-1.5  EV 07%
+-1.0  EV 08%
+-0.5  EV 09%
++0.0  EV 0a%
++0.5  EV 0b%
++1.0  EV 0c%
++1.5  EV 0d%
++2.0  EV 0e%
+
+上面的所有白平衡设置重置  PT 02%
 
 ###Continuous Shot (HERO3):
 
